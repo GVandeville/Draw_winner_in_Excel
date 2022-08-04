@@ -19,7 +19,7 @@ def fillWinnerInfo():
     canvas.create_text(300, 30, text="Winner", font="Arial 16 italic", fill="red")
     canvas.create_text(75, 100, text="Index: ", font="Arial 16 italic", fill="blue")
     canvas.create_text(75, 140, text="Winner: ", font="Arial 16 italic", fill="blue")
-    canvas.create_text(75, 180, text="Play on: ", font="Arial 16 italic", fill="blue")
+    canvas.create_text(75, 180, text="Played on: ", font="Arial 16 italic", fill="blue")
     canvas.create_text(75, 220, text="Discord: ", font="Arial 16 italic", fill="blue")
     y = 100
     # Write each info of the selected person
@@ -31,7 +31,6 @@ def fillWinnerInfo():
 # Creation of the window
 window = Tk()
 window.title("Lottery")
-
 # Make a drawing stylesheet
 canvas = Canvas(window, width=600, height=300, background='yellow')
 
