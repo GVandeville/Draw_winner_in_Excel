@@ -8,12 +8,12 @@ df_sheet_index = pd.read_excel('Players_for_08-31-2022.xlsx')
 # get the number of rows
 rows = df_sheet_index.shape[0]
 
-# get the index of the winner
+# choose the winner and get the index
 index = np.random.randint(0, rows)
 
 
 def fillWinnerInfo():
-    # Start making the template
+    # Start making the template of the window
     canvas.create_text(300, 30, text="Winner", font="Arial 16 italic", fill="red")
     canvas.create_text(75, 100, text="Index: ", font="Arial 16 italic", fill="blue")
     canvas.create_text(75, 140, text="Winner: ", font="Arial 16 italic", fill="blue")
@@ -29,8 +29,7 @@ def fillWinnerInfo():
 # Creation of the window
 window = Tk()
 window.title("Lottery")
-# Make a drawing stylesheet
-canvas = Canvas(window, width=600, height=300, background='yellow')
+canvas = Canvas(window, width=600, height=300, background='orange')
 
 # Fill the info with the winner
 fillWinnerInfo()
